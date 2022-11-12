@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import HomePage from "./page/HomePage";
 import ProductsPage from "./page/ProductsPage";
 
 class Main extends Component {
     render() {
         return (
-            <>
+            <main className="main-container">
                 {/*
                 Nursat component
                 <HomePage/>
@@ -13,14 +12,16 @@ class Main extends Component {
 
                 {/*
                 Ulan component
-                <ProductPage/>
+                <ProductsPage/>
                 */}
+
+                <ProductsPage/>
 
                 {/*
                 Jaras component
                 <AboutPage/>
                 */}
-            </>
+            </main>
         );
     }
 }

@@ -4,7 +4,7 @@ class AboutPage extends Component {
     render() {
         return (
             <div>
-                
+                about page working!
             </div>
         );
     }
