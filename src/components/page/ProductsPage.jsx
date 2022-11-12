@@ -5,6 +5,7 @@ class ProductsPage extends Component {
     render() {
         return (
             <div>
+                products page working!
                 <GoodList/>
             </div>
         );
