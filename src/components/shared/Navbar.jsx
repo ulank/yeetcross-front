@@ -4,15 +4,15 @@ class Navbar extends Component {
     render() {
         return (
             <>
-                <nav>
-                    <a>
-
+                <nav className="navbar">
+                    <a href="/">
+                        Home
                     </a>
-                    <a>
-
+                    <a href="/products">
+                        Products
                     </a>
-                    <a>
-
+                    <a href="/about">
+                        About
                     </a>
                 </nav>
             </>
