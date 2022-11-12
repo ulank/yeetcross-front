@@ -3,6 +3,15 @@ import GoodService from "../../services/GoodService";
 
 
 class GoodList extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            goods: [],
+        }
+    }
+
     componentDidMount() {
         this.retrieveGoods();
     }
@@ -12,7 +21,6 @@ class GoodList extends Component {
             this.setState({
                 goods: response
             });
-            console.log(response);
         })
             .catch(e => {
                 console.log(e);
