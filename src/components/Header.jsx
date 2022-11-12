@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import Navbar from "./shared/Navbar";
 
 class Header extends Component {
     render() {
         return (
-            <div>
-                <Navbar/>
-            </div>
+            <header className="header-container">
+                    <a className="logo" href="/">
+                        yeetcross
+                    </a>
+            </header>
         );
     }
 }
