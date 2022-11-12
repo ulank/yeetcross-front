@@ -30,6 +30,10 @@
     color: #FF7F74;
 }
 
+.nav-item-active{
+    text-decoration: underline;
+}
+
 .sign-btn{
     background-color: #FF7F74;
     color: #fff;
