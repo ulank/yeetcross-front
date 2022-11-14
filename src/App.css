@@ -53,7 +53,167 @@
     margin: 0 80px 0 80px;
 }
 
+/* Home page */
+.content-1{
+    margin: 20px 425px 20px 155px;
+    border-radius: 10px;
+    background: #FF7F74;
+    height: 253px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:0 50px 0 50px;
+
+    transition: 0.6s;
+}
+
+.content-1:hover{
+    background: #CEE3FE; 
+}
+
+.content-1:hover .block-2 button{
+    background: #FF7F74;
+}
+
+.block-1{
+    margin: 0 0 0 23px;
+    height: 100%;
+}
+
+.block-1 img{
+    width: 288px;
+    height: 253px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.block-2{
+    padding: 0 77px 0 0;
+}
+
+.block-2 p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.block-2 button{
+    background: #CEE3FE;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+    width: 157px;
+    height: 38px;
+
+    margin: 20px 0 0 70px;
+
+    transition: 0.3s;
+}
+
+.block-2 button:hover{
+    color:#fff;
+}
+
+.content-2{
+    margin: 20px 425px 20px 155px;
+
+    transition: 0.6s;
+}
+
+.content-2 p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.card-hit{
+    display:flex;
+    justify-content: space-between;
+
+    margin: 15px 0 0 0;
+    padding: 0 45px 0 45px;
+}
+
+.hit{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+
+    width: 300px;
+
+    padding: 20px;
+    
+    transition: 0.4s;
+}
+
+.hit:hover{
+    transform: translateY(-3%);
+}
+
+.hit .name{ 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.type .price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+
+    color: #8E8E8E;
+}
+
+.type .value{  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #000000;
+}
+
+.adder{
+    padding: 10px 0 0 0;
+}
+
+.adder button{
+    background: #CEE3FE;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+
+    align-items: center;
+    text-align: center;
+    padding: 0 0 3px 0;
+
+    font-weight: 900;
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.adder button:hover{
+    background: #FF7F74;
+}
 
 /* About page */
 .about{
