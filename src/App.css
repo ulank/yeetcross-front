@@ -53,7 +53,7 @@
     margin: 0 80px 0 80px;
 }
 
-
+/* Home page */
 .content-1{
     margin: 20px 425px 20px 155px;
     border-radius: 10px;
@@ -213,4 +213,82 @@
 
 .adder button:hover{
     background: #FF7F74;
+}
+
+/* About page */
+.about{
+    padding-left: 165px;
+    padding-bottom: 20px;
+}
+.h2, h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 127, 116, 0.8);
+}
+
+.about_text{
+    background-color: rgba(255, 127, 116, 0.6);
+    margin: 0 160px 50px 160px;
+    width: 1030px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.text_in p{
+    margin: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.cards{
+    margin: 0 230px 30px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.card{
+    padding: 0 100px 0 0;
+}
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+.brand{
+    margin: 20px 360px 0 160px;
+}
+
+.brand_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.brands{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 55px 0 55px;
+    width: 32%;
+    height: 180px;
+    transition:  0.5s;
+}
+.brands:hover{
+    border: 3px solid rgba(255, 127, 116, 0.8);
 }
