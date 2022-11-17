@@ -23,7 +23,7 @@ const HitsList = () => {
     return (
         <div className="card-hit">
             {sneakers.map((sneaker) => (
-                <div className="hit">
+                <div className="hit" key={sneaker.id}>
                     <div className="like"></div>
                     <div className="sneaker">
                         <img src={sneaker.image} alt=''/>

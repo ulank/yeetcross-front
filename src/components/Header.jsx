@@ -1,31 +1,43 @@
-import React, {Component} from 'react';
-import Navbar from "./shared/Navbar";
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
-import Dialog from "./shared/Dialog";
+import Navbar from "./shared/Navbar";
+import {useNavigate} from "react-router-dom";
 
-class Header extends Component {
-    state = {
-        isOpen: false
-    }
-    render() {
-        return (
-            <>
-                <header className="header-container">
-                    <NavLink className="logo" to="/">
-                        yeetcross
-                    </NavLink>
-                    <Navbar/>
-                    <button className="sign-btn" onClick={() => this.setState({ isOpen: true })}>
+const Header = () => {
+    const navigate = useNavigate();
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            setUser(user);
+            console.log(user);
+        }
+    }, []);
+    return (
+        <>
+            <header className="header-container">
+                <NavLink className="logo" to="/">
+                    yeetcross
+                </NavLink>
+                <Navbar/>
+                {localStorage.getItem('user') ? <div className='login-username'>
+                        <p>
+                            {user.username} :
+                        </p>
+                        <button className='log-out-btn' onClick={() => {
+                            localStorage.removeItem('user');
+                            window.location.reload();
+                        }}>
+                            Log out
+                        </button>
+                    </div>
+                    : <button className='sign-btn' onClick={() => navigate('/login')}>
                         Sign In
-                    </button>
-                </header>
-                <Dialog isOpen={this.state.isOpen} onClose={() => this.setState({ isOpen: false })}>
-                </Dialog>
-            </>
-
-        );
-    }
-}
+                    </button>}
+            </header>
+        </>
+    );
+};
 
 export default Header;
-

@@ -25,7 +25,7 @@ const GoodList = () => {
         <div>
             <div className="products">
                 {sneakers.map((sneaker) => (
-                    <div className="hits">
+                    <div className="hits" key={sneaker.id}>
                         <div className="like"></div>
                         <div className="sneaker">
                             <img src={sneaker.image} alt=''/>
