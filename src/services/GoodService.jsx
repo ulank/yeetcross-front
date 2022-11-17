@@ -2,7 +2,11 @@ import http from "../http-common";
 
 class GoodService {
     getAll(){
-        return http.get(`/good/api`)
+        return http.get(`/api/business/sneakers`)
+    }
+
+    getHitsSneakers(){
+        return http.get(`/api/business/sneakers/hits`)
     }
 }
 
