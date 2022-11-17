@@ -14,8 +14,7 @@ let dialogStyles = {
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column'
-};
-
+}
 let dialogCloseButtonStyles = {
     marginBottom: '15px',
     padding: '3px 8px',
@@ -34,7 +33,19 @@ class Dialog extends Component {
         let dialog = (
             <div style={dialogStyles}>
                 <button style={dialogCloseButtonStyles} onClick={this.props.onClose}>x</button>
-
+                <label>
+                    Login:
+                    <br></br>
+                    <input></input>
+                    <br></br>
+                    Password:
+                    <br></br>
+                    <input type='password' className='password'></input>
+                    <br></br>
+                    <div className="button">
+                        <button>Submit</button>
+                    </div>
+                </label>
                 <div>{this.props.children}</div>
             </div>
         );

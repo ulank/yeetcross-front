@@ -20,7 +20,6 @@ class Header extends Component {
                     </button>
                 </header>
                 <Dialog isOpen={this.state.isOpen} onClose={() => this.setState({ isOpen: false })}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste a ipsam repellendus commodi ad, fugit id magnam inventore laudantium autem delectus praesentium incidunt debitis, numquam dicta eveniet obcaecati, itaque quidem?
                 </Dialog>
             </>
 
