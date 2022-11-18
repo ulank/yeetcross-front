@@ -482,3 +482,71 @@ label .password{
     margin-bottom: 30px;
 }
 
+section{
+    margin: 30px 150px;
+}
+
+section h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: none;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin: 80px 500px;
+    text-align: center;
+    align-items: center;
+}
+
+section p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #FF7F74;
+}
+
+section form label{
+    text-align: center;
+    margin: 20px 0;
+}
+
+section form input{
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+section form input:hover{
+    border: 3px solid #000000;
+}
+
+section form button{
+    margin: 20px 0;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 50%;
+}
+section form button:hover{
+    background: #FF7F74;
+    color: #fff;
+}
+
+section p span{
+    margin-left: 20px;
+}
+
+section p .line{
+    color: #000000;
+    transition: 0.3s;
+    width: 100px;
+    border-radius: 5px;
+}
+
+section p .line:hover{
+    background: #FF7F74;
+    color: #fff;
+}
